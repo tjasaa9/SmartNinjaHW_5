@@ -26,3 +26,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//clear input function
+var clearBtn = document.querySelector(".clear");
+
+clearBtn.addEventListener("click", function(){
+ document.getElementById("myForm").reset();
+});
