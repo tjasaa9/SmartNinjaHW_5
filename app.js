@@ -34,4 +34,3 @@ clearBtn.addEventListener("click", function(){
  document.getElementById("myForm").reset();
 });
 
-//komentar
