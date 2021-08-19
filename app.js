@@ -33,3 +33,5 @@ var clearBtn = document.querySelector(".clear");
 clearBtn.addEventListener("click", function(){
  document.getElementById("myForm").reset();
 });
+
+//komentar
