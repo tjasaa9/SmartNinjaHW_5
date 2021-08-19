@@ -56,3 +56,7 @@ var clearBtn = document.querySelector(".clear");
 clearBtn.addEventListener("click", function(){
  document.getElementById("myForm").reset();
 });
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9f41883505576eb7270cf82c8116635711aa5fd4
