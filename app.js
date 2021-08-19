@@ -27,10 +27,36 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+//BackUp
+//Get the backUp button
+mybutton = document.getElementById("backUp");
+
+//When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        mybutton.style.display = "block";
+    }
+    else{
+        mybutton.style.display = "none";
+    }
+}
+
+//When the user clicks on the button, scroll  to the top of the document
+function backUp(){
+    document.body.scrollTop = 0; //For Safari
+    document.documentElement.scrollTop = 0; //For Chrome, Firefox, IE and Opera
+}
 //clear input function
 var clearBtn = document.querySelector(".clear");
 
 clearBtn.addEventListener("click", function(){
  document.getElementById("myForm").reset();
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9f41883505576eb7270cf82c8116635711aa5fd4
