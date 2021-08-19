@@ -50,3 +50,9 @@ function backUp(){
     document.body.scrollTop = 0; //For Safari
     document.documentElement.scrollTop = 0; //For Chrome, Firefox, IE and Opera
 }
+//clear input function
+var clearBtn = document.querySelector(".clear");
+
+clearBtn.addEventListener("click", function(){
+ document.getElementById("myForm").reset();
+});
