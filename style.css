@@ -225,7 +225,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 25vw;
-    justify-content: space-around;
+    justify-content: space-;
     text-align: center;
 }
 
@@ -354,14 +354,14 @@ width: 35vw;
 
 footer{
 background-image: linear-gradient(to right, #e66465,rgb(231, 129, 129),  #310808);
-display: inline-block;
-width: 100%;    
-}
+display: flex;
+padding: 20px;
+height: 15vh;
+flex-flow: row;
+align-items: flex-end;
+position: relative;
 
-.contact{
-  padding: 20px;
 }
-
 
 #backUp{
   display: none; /* Hidden by default */
@@ -378,6 +378,21 @@ width: 100%;
   font-size: 18px; /* Increase font size */
 
 }
+
+.contact{
+  position: absolute;
+  bottom: 20px;
+  top: 5px;
+  text-align: center;
+  
+}
+
+.social{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: inline-flex;
+}
 #backUp:hover{
-    background-color: #555;
+    background-color: white;
 }
